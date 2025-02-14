@@ -1,0 +1,289 @@
+:root {
+    --primary-color: #a3a09ed7;
+    --point-color: #ff6d00;
+    --w-color: #ffffff;
+    --b-color: #4f4f4f;
+    --bg-color: #f2f0ed;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #4f4f4f;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.inner {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .inner {
+        max-width: 1290px;
+        margin: 0 auto;
+
+        /* r */
+        margin: 0 16px;
+    }
+
+}
+
+.title {
+    max-width: 1290px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        max-width: 1290px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        /* r */
+        margin: 0 16px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.en_font {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 400;
+}
+
+.default {
+    padding: 12rem 0;
+}
+
+.btn_bubble {
+    position: relative;
+    z-index: 1;
+    margin: 16px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 800;
+
+    line-height: 40px;
+    border: 2px solid #222;
+    border-radius: 32px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.btn_bubble:hover span {
+    color: #fff;
+}
+
+.btn_bubble::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 0;
+    z-index: -1;
+
+    width: 60px;
+    height: 120px;
+
+    background: #222;
+    border-radius: 50px 50px 0 0;
+
+    transition: 0.4s;
+
+    transform: scaleX(1.5);
+}
+
+.btn_bubble:hover::before {
+    top: -30px;
+}
+
+.btn_bubble::after {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 60px;
+    z-index: -1;
+
+    width: 60px;
+    height: 120px;
+
+    background: #222;
+    border-radius: 50px 50px 0 0;
+    transition: 0.4s 0.1s;
+
+    transform: scaleX(1.5);
+
+}
+
+.btn_bubble:hover::after {
+    top: -30px;
+}
+
+
+.btn_bubble span::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 120px;
+    z-index: -1;
+
+    width: 60px;
+    height: 120px;
+
+    background: #222;
+    border-radius: 50px 50px 0 0;
+    transition: 0.4s 0.2s;
+
+    transform: scaleX(1.5);
+}
+
+.btn_bubble:hover span::before {
+    top: -30px;
+}
+
+.btn_bubble span::after {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 180px;
+    z-index: -1;
+
+    width: 60px;
+    height: 120px;
+
+    background: #222;
+    border-radius: 50px 50px 0 0;
+    transition: 0.4s 0.3s;
+
+    transform: scaleX(1.5);
+}
+
+.btn_bubble:hover span::after {
+    top: -30px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .default {
+        padding: 12rem 0;
+    }
+
+    .btn_bubble {
+        position: relative;
+        z-index: 1;
+        margin: 16px;
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 800;
+
+        line-height: 40px;
+        border: 2px solid #222;
+        border-radius: 32px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .btn_bubble:hover span {
+        color: #fff;
+    }
+
+    .btn_bubble::before {
+        content: "";
+        position: absolute;
+        top: 64px;
+        left: 0;
+        z-index: -1;
+
+        width: 60px;
+        height: 120px;
+
+        background: #222;
+        border-radius: 50px 50px 0 0;
+
+        transition: 0.4s;
+
+        transform: scaleX(1.5);
+    }
+
+    .btn_bubble:hover::before {
+        top: -30px;
+    }
+
+    .btn_bubble::after {
+        content: "";
+        position: absolute;
+        top: 64px;
+        left: 60px;
+        z-index: -1;
+
+        width: 60px;
+        height: 120px;
+
+        background: #222;
+        border-radius: 50px 50px 0 0;
+        transition: 0.4s 0.1s;
+
+        transform: scaleX(1.5);
+
+    }
+
+    .btn_bubble:hover::after {
+        top: -30px;
+    }
+
+
+    .btn_bubble span::before {
+        content: "";
+        position: absolute;
+        top: 64px;
+        left: 120px;
+        z-index: -1;
+
+        width: 60px;
+        height: 120px;
+
+        background: #222;
+        border-radius: 50px 50px 0 0;
+        transition: 0.4s 0.2s;
+
+        transform: scaleX(1.5);
+    }
+
+    .btn_bubble:hover span::before {
+        top: -30px;
+    }
+
+    .btn_bubble span::after {
+        content: "";
+        position: absolute;
+        top: 64px;
+        left: 180px;
+        z-index: -1;
+
+        width: 60px;
+        height: 120px;
+
+        background: #222;
+        border-radius: 50px 50px 0 0;
+        transition: 0.4s 0.3s;
+
+        transform: scaleX(1.5);
+    }
+
+    .btn_bubble:hover span::after {
+        top: -30px;
+    }
+}
